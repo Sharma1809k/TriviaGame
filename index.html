@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trivia Game!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class=content>
+    <h1>Trivia Game!</h1>
+
+    <div class=timer></div>
+
+    <div id=time></div>
+    <div id=correct></div>
+    <div id=incorrect></div>
+    <div id=unanswered></div>
+
+
+    <div class="buttons">
+      <!-- <button id="start"><h2>Start</h2></button> -->
+      <button type="button" class="btn">
+        <h2>Start</h2>
+      </button>
+      <!-- <button id="done"><h2>Done</h2></button> -->
+    </div>
+
+    <div id="questions">
+<form>
+      <h3>1) Who invented Penicillin?</h3>
+      <label>
+        <input type="radio" class="options" value="0" name="1" />Alexandra Fleming</label>
+      <label>
+        <input type="radio" class="options" value="1" name="1" />Thomas Edison</label>
+      <label>
+        <input type="radio" class="options" value="1" name="1" />Marie Curie</label>
+      <label>
+        <input type="radio" class="options" value="1" name="1" />George Orwell</label><br>
+
+      <h3> 2) What colour is Cerulean?</h3>
+      <label>
+        <input type="radio"  class="options" value="2" name="2" />Red</label>
+      <label>
+        <input type="radio" class="options" value="0" name="2" />Blue</label>
+      <label>
+        <input type="radio"  class="options" value="2" name="2" />Yellow</label>
+      <label>
+        <input type="radio"  class="options" value="2" name="2" />Green</label><br>
+
+      <h3>3) Which is the largest planet in the solar system?</h3>
+      <label>
+        <input type="radio"  class="options" value="0" name="3" /> Jupiter</label>
+      <label>
+        <input type="radio"  class="options" value="3" name="3" />Neptune</label>
+      <label>
+        <input type="radio" class="options" value="3" name="3" />Earth</label>
+      <label>
+        <input type="radio" class="options" value="3" name="3" />Mars</label>
+
+      <h3> 4) What does an average human brain weigh?</h3>
+      <label>
+        <input type="radio" class="options" value="4" name="4" />14 grams</label>
+      <label>
+        <input type="radio"  class="options" value="0" name="4" />1.4 kilograms</label>
+      <label>
+        <input type="radio"  class="options" value="4" name="4" />14 kilograms</label>
+      <label>
+        <input type="radio"  class="options" value="4" name="4" />4.1 kilograms</label>
+
+      <h3>5) Which side of your brain has more neurons?</h3>
+      <label>
+        <input type="radio" class="options" value="5" name="5" />Left</label>
+      <label>
+        <input type="radio" class="options" value="0" name="5" />Right</label>
+      <label>
+        <input type="radio" class="options" value="5" name="5" />Both are same</label>
+
+      <h3>6) What kind of animal is the jackrabbit?</h3>
+      <label>
+        <input type="radio" class="options" value="6" name="6" />Rabbit</label>
+      <label>
+        <input type="radio" class="options" value="6" name="6" />Bunny</label>
+      <label>
+        <input type="radio" class="options" value="0" name="6" />Hare</label>
+      <label>
+        <input type="radio" class="options" value="6" name="6" />Hamster</label>
+
+      <h3> 7) What is the fastest water animal?</h3>
+      <label>
+        <input type="radio" class="options" value="7" name="7" />Porpoise</label>
+      <label>
+        <input type="radio" class="options" value="0" name="7" />Sailfish</label>
+      <label>
+        <input type="radio" class="options" value="7" name="7" />Flying fish</label>
+      <label>
+        <input type="radio" class="options" value="7" name="7" />Tuna</label><br>
+</form>
+      <div class="buttons">
+        <button type="button" class="btn-primary">
+          <h2>Done</h2>
+        </button></div>
+
+    </div>
+  </div>
+
+  <body background="assets/images/29323-NXLNIR.jpg">
+    <script src="assets/javascript/app.js"></script>
+  </body>
+
+</html>

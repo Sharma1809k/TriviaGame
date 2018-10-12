@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+.content {
+    background-color:rgb(239, 238, 245);
+    width: 900px;
+    text-align: center;
+    overflow: auto;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(107, 2, 60);
+}
+h1 {
+    color:  rgb(19, 50, 226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    letter-spacing: -2px;
+  
+}
+.btn  {
+    background:    rgb(107, 2, 60);;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(209, 7, 118);
+    color: #fff
+}
+
+.btn-primary{
+    background:    rgb(107, 2, 60);;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(209, 7, 118);
+}
+#questions {
+  display: none;
+    color:rgb(19, 50, 226)
+}
+
+.timer {
+    font-size: 50px;
+    font-weight: 600;
+    color:  rgb(107, 2, 60);
+
+}
+#time{
+    color: rgb(107, 2, 60);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    
+
+}
+#correct , #incorrect , #unanswered {
+    color:  rgb(19, 50, 226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    
+}
