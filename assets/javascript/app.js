@@ -1,22 +1,25 @@
+// Making global variables
 var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
 
-
+// Ready function that wraps all functions
 
 $(document).ready(function () {
+
+	// Start button click function
+
 	$(".btn").click(function () {
 		$(".btn").css("display", "none")
 
+		// Countdown
 
-		var number = 181;
+		var number = 121;
 		var intervalId;
-
 
 		function timeConverter() {
 
 			var minutes = Math.floor(number / 60);
-			// var seconds = number - (minutes * 60); OR
 			var seconds = number % 60;
 
 			if (seconds < 10) {
@@ -33,27 +36,25 @@ $(document).ready(function () {
 			return minutes + ":" + seconds;
 		}
 
-
-
 		function run() {
 			clearInterval(intervalId);
 			intervalId = setInterval(decrement, 1000);
 		};
 
-
 		function decrement() {
-
-
 			number--;
 
-
+		   //Timer Display
+		   
 			$(".timer").html(timeConverter("<h2>" + number + "</h2>"));
+
+			// If Time's up hide questions and show score
+
 			if (number === 0) {
 
 				$("#questions").hide("display");
 				stop();
 				$(".timer").hide("display");
-
 
 				$("#time").text("Time's Up!!!");
 
@@ -66,8 +67,10 @@ $(document).ready(function () {
 			clearInterval(intervalId);
 		}
 		run();
-
+		
 		$("#questions").show("display");
+
+       // Done button function and calculating score
 
 		$(".btn-primary").click(function () {
 
@@ -154,18 +157,13 @@ $(document).ready(function () {
 			stop();
 			$(".timer").hide("display");
 
+			// Show Score
+			
 			$("#correct").text("Correct :" + correct);
 			$("#incorrect").text("Incorrect :" + incorrect);
 			$("#unanswered").text("Unanswered :" + unanswered);
-
-
-
 		});
-
-
-
 	});
-
 });
 
 
